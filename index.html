@@ -76,6 +76,11 @@
     margin: 1.5rem 0 2.5rem;
     line-height: 1.6; max-width: 420px;
   }
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
   .hero-cta {
     display: inline-block;
     padding: 0.85rem 2rem;
@@ -90,8 +95,17 @@
     transition: all 0.3s;
   }
   .hero-cta:hover { background: var(--c4); color: var(--c1); }
-  .hero-cv { background: rgba(201,173,167,0.12); }
-  .hero-cv:hover { background: var(--c4); color: var(--c1); }
+  .hero-projects { background: rgba(201,173,167,0.12); }
+  .hero-projects:hover { background: var(--c4); color: var(--c1); }
+  .hero-download {
+    background: var(--c4);
+    border-color: var(--c4);
+    color: var(--c1);
+  }
+  .hero-download:hover {
+    background: transparent;
+    color: var(--c4);
+  }
   .hero-photo {
     flex-shrink: 0;
     position: relative;
@@ -379,9 +393,10 @@
     <p class="hero-eyebrow">Developer & Athlete</p>
     <h1 class="hero-name">Jemil<br><span>Patel</span></h1>
     <p class="hero-tagline">I design clean, responsive web experiences and build practical booking platforms that help businesses serve customers better.</p>
-    <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+    <div class="hero-actions">
       <a href="#contact" class="hero-cta">Get in Touch</a>
-      <a href="#projects" class="hero-cta hero-cv">View Projects</a>
+      <a href="#projects" class="hero-cta hero-projects">View Projects</a>
+      <a href="Jemilpatel7257.pdf" class="hero-cta hero-download" download>Download CV</a>
     </div>
     <div class="hero-sports">
       <span class="sport-badge">🏐 Volleyball</span>
